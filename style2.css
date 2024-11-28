@@ -8,12 +8,12 @@ html {
 
 body {
     width: 100%;
-    height: 2000px;
+    height: 1300px;
     left: 0;
     font-family: "Heebo";
     background-size: cover;
     background-position: top;
-    background-image: linear-gradient(to bottom, rgba(33, 41, 69), rgba(43, 32, 66)), url(img/nukers.png);
+    background-image: linear-gradient(to bottom, rgba(79, 84, 115), rgba(43, 32, 50)), url(img/nukers.png);
     background-repeat:repeat-x;
 }
 
@@ -84,7 +84,7 @@ input {
     left: 0;
     background-color: #212126/*#171717#3c3f41*/;
     z-index: 2;
-    box-shadow: 1px 4px 10px 0px black;
+    box-shadow: 1px 0px 10px 0px black;
 }
 
 .sidebar-block {
@@ -226,17 +226,16 @@ h5 {
 .hub-block {
     position: relative;
     top: 700px;
-    left: 5%;
-    display: ;
+    display: inline-block;
+    margin: 10px;
+    left: 10px;
     
 }
 
 .hub-block-container {
-    width: 800px;
-    height: 250px;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
+    width: 760px;
+    height: 230px;
+    display: flex;
     box-shadow: 0px 5px 6px black;
     border-radius: 25px;
     background-color: #212126;
@@ -254,7 +253,10 @@ h5 {
     padding: 5px;
     box-shadow: 0px 5px 6px black;
     transition: transform 0.5s;
-    
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
 }
 
 
@@ -272,7 +274,7 @@ h5 {
 
 .card-name {
     
-    height: 38px;
+    height: 40px;
     width: 150px;
     background-color: #282831;
     border-radius: 0px 0px 10px 10px;
@@ -280,6 +282,8 @@ h5 {
     border-color: #363642;
     position: relative;
     left: -5px;
+    margin-top: 5px
+
 }
 
 h6 {
@@ -289,4 +293,55 @@ h6 {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0px;
+}
+
+.hub-block-name {
+    position: relative;
+    top: -100px;
+    left: 500px;
+    text-align: center;
+}
+
+h3 {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid white;
+    background-color: aqua;
+    padding: 
+    
+}
+
+.hub-name-container {
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    width: 760px;
+    background-color: red;
+    border-bottom:3px solid darkred;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    align-content: center;
+    align-items: center;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.footer {
+
+    position:sticky;
+    width: 100%;
+    height: 70px;
+    background: #212126;
+    top: 100%;
+    bottom: 0;
+    z-index: 2;
+    margin-bottom: -6px;
+    
 }
