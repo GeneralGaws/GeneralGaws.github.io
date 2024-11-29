@@ -17,7 +17,6 @@ body {
     background-repeat:repeat-x;
 }
 
---------30,87,153,0.8-----
 @font-face {
   font-family: "Heebo", serif;
   src: url("fonts/Heebo-VariableFont_wght.woff2");
@@ -36,7 +35,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 1px 1px 10px black;
     
 }
 
@@ -70,7 +69,7 @@ input {
     overflow-wrap:normal;
     text-decoration:none;
     position: absolute;
-    border: 0px;
+    border: 1px;
     border-radius: 10px;
     left: 40%;
     width: 500px;
@@ -84,7 +83,7 @@ input {
     left: 0;
     background-color: #212126/*#171717#3c3f41*/;
     z-index: 2;
-    box-shadow: 1px 0px 10px 0px black;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 .sidebar-block {
@@ -140,7 +139,7 @@ input {
     border-radius: 5px;
     background-color: #212126;
     display: block;
-    box-shadow: 0px 5px 6px black;
+    box-shadow: 1px 5px 6px black;
         
 }
 
@@ -236,7 +235,7 @@ h5 {
     width: 760px;
     height: 230px;
     display: flex;
-    box-shadow: 0px 5px 6px black;
+    box-shadow: 1px 5px 6px black;
     border-radius: 25px;
     background-color: #212126;
     
@@ -251,7 +250,7 @@ h5 {
     background-color: #333333;
     border-radius: 10px;
     padding: 5px;
-    box-shadow: 0px 5px 6px black;
+    box-shadow: 1px 5px 6px black;
     transition: transform 0.5s;
     display: flex;
     justify-items: center;
@@ -277,7 +276,7 @@ h5 {
     height: 40px;
     width: 150px;
     background-color: #282831;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 1px 1px 10px 10px;
     border-top: 3px solid white;
     border-color: #363642;
     position: relative;
@@ -292,7 +291,6 @@ h6 {
     font-size: 15px;
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 0px;
 }
 
 .hub-block-name {
@@ -311,7 +309,6 @@ h3 {
     right: 0;
     border-bottom: 2px solid white;
     background-color: aqua;
-    padding: 
     
 }
 
