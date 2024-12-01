@@ -4,11 +4,81 @@
   <meta charset="utf-8" />
   <title></title>
   <link rel="stylesheet" href="stylenuke.css" />
+    <script src="jquery-3.7.1.slim.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
+ <button class="closeButton" id="btnOpen" style="right:auto;margin-left: 0px; position: fixed;" onclick="openNav()">→</button>
+    <section class="side" id="sideBar">
+      <button class="closeButton" id="btnClose" onclick="closeNav()">X</button>
+
+        
+         <div class="sidebar-block">
+         
+             <div class="side-block-name">Основное</div>
+             
+             <div class="sidebar-block-item">
+             
+                 <a href="./ArticleHubs\1_Guides/0_Hub.html">                      <img src="https://station14.ru/images/d/d0/CrowbarRed.png">Руководства</a>             
+                <a href="./ArticleHubs\2_Roles/0_Hub.html"><img src="./img/lore/species/Oni.png">Роли</a>  
+                
+                <a href="./ArticleHubs\3_Lore/0_Hub.html">                      <img src="https://station14.ru/images/0/0c/%D0%9D%D0%B0%D0%BD%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%B5%D0%BD%D0%BB%D0%BE%D0%B3%D0%BE.png">Лор</a>  
+             
+             </div>
+             
+         </div>
+             
+         
+         <div class="sidebar-block">
+             
+             <div class="side-block-name">Дополнительное</div>
+         
+             <div class="sidebar-block-item">
+             
+          <a href="./ArticleHubs\4_StandardOperatingProcedures/0_Hub.html"><img src="https://wiki.ss14.su/guides/guide-page-icons/stationtasks.png">СРП</a>  
+          <a href="./ArticleHubs\5_Bureaucracy/0_Hub.html"><img src="https://station14.ru/images/e/e5/32pxDoc.png">Бюрократия</a>  
+          <a href="./ArticleHubs\6_CorpLaw/0_Hub.html"><img src="https://wiki.ss14.su/lawbook1.png">Корпоративные законы</a>
+             
+             </div>
+             
+         </div>
+        
+        
+      <section class="sideBottom" id="sideBar2">
+
+      <a href="https://discord.com/invite/sqjEbTgm6R/"><img class="linksImg" src="./img/discord.svg" alt="Discord"></a>
+      <a href="https://ss14.madeline.sh/hub/2110"><img class="linksImg" src="./img/crown.svg" alt="Monitoring"></a>
+      <a href="https://boosty.to/bruninrts/donate/"><img class="linksImg" src="./img/boosty.svg" alt="Boosty"></a>
+
+        <p style="color: rgb(48, 48, 48); margin-top: 0.3cm; text-shadow: none;">Powered by: nothing</p>
+      </section>
+      <script>
+        function downFunction() {
+          document.body.scrollTop = 9999999;
+          document.documentElement.scrollTop = 9999999;
+          document.getElementById("sideBar").style.width = "0px";
+          document.getElementById("sideBar2").style.width = "0px";
+        }
+      </script>
+    </section>
+    <script>
+      function openNav() {
+        document.getElementById("sideBar").style.width = "250px";
+        document.getElementById("sideBar2").style.width = "250px";
+        document.getElementById("btnOpen").style.opacity = "0";
+        document.getElementById("btnClose").style.opacity = "1";
+      }
+
+      function closeNav() {
+        document.getElementById("sideBar").style.width = "0px";
+        document.getElementById("sideBar2").style.width = "0px";
+        document.getElementById("btnOpen").style.opacity = "1";
+        document.getElementById("btnClose").style.opacity = "0";
+      }
+    </script>
+    
 <body>
     
     <header class="header">
@@ -22,6 +92,17 @@
         
     </header>
     
+    <div class="sidebar-container">
+        
+        <h5>Содержание</h5>
+        <a class="sidebar-text" href="#role">Как получить роль</a>
+        <a class="sidebar-text" href="#test">Тест работы содержания</a>
+        <a class="sidebar-text" href="#welcome">Добро пожаловать</a>
+        <a class="sidebar-text" href="#">Как получить роль</a>
+        <a class="sidebar-text" href="#">Как получить роль</a>
+        
+    </div>
+   
     <div class="main-part">
     
         <div class="main-part-container">
@@ -30,6 +111,11 @@
             <div class="job-card-container">
             
                 <div class="job-image"><img class="job-icon" src="img/nuclearoperative.png"></div>
+                
+                <audio class="audio" controls="controls">
+                    <source src="sound/nukeops_start.ogg" type="audio/ogg" />
+                </audio>
+                
                 <div class="job-text">
                     <div class="bubble"><h6 class="phrase-text"></h6></div>
                     
@@ -54,6 +140,37 @@
             
             </div>
                         
+            <div class="welcome-info-container">
+            
+                <div class="welcome-name"><h3 id="role">Как получить роль?</h3></div>
+                <div class="welcome-content">
+                
+Для того, чтобы стать ядерным оперативником, нужно поставить галочку в меню создания персонажа на роль ядерных оперативников, либо стать одиноким оперативником выбрав соответствующую роль будучи призраком.
+<p></p>                    
+Для того, чтобы получить возможность стать ядерным оперативником, нужно поставить галочку в меню создания персонажа на роль ядерного оперативника, которая вам по душе.
+                
+                </div>
+            
+            </div>
+    
+            <div class="end"></div>
+            
+            <div class="info-block-container">
+                <h3 id="welcome">Добро пожаловать в отряд охотников за головами</h3>
+                <div class="info-block-content">Когда начнется раунд, вы окажетесь на секретном аванпосте Синдиката. Здесь вы найдете свою команду, командира, коды для запуска ядерной бомбы и все оборудование, необходимое для проникновения на станцию. Во избежание путаницы все оперативники должны слушать и выполнять указания своего командира. Вы - ударная группа, а не одинокий агент, поэтому ведите себя соответственно.
+<p></p>
+У вас есть специальная радиочастота, настроенная на зашифрованную длину волны (префикс :т), с ее помощью вы будете общаться со своей командой. Однако будьте осторожны, если один из ваших товарищей погибнет, радиочастота может быть скомпрометирована.</div>
+            </div>
+            
+        </div>
+    
+        <h1 id="test">ещкере</h1>    
+        
+    </div>
+    
+    
+    
+
             
         
         </div>
