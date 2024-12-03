@@ -116,11 +116,10 @@ main-part {
 }
 
 .main-part-container {
-    width:calc(100% - 360px);
+    width: cacl(100% - 100px);
     height: auto;
     margin-left: 180px;
     margin-right: 180px;
-    justify-items: normal;
     background-color: #380404;
     position: absolute;
     top: 80px;
@@ -332,7 +331,7 @@ h3 {
 .side {
     box-shadow: 3px 1px 5px black;
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 0px; /* Set the width of the sidebar */
+    width: 1px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 80px; /* Stay at the top */
@@ -346,7 +345,7 @@ h3 {
 
 .sideBottom{
     z-index: 1;
-    width: 0px;
+    width: 1px;
     left: 0;
     overflow-x: hidden; 
     font-size:small;
@@ -433,4 +432,30 @@ h3 {
     margin: 2px 15px 5px 5px;
     height: 35px;
     width: 45px;
+}
+
+
+
+@media (max-width: 320px) {
+    .main-part-container {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 1250px) {
+    .main-part-container {
+        margin-right: 180px;
+    }
+    
+}
+
+@media (max-width: 1599px) {
+    .welcome-info-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 30px;
+    
+    }
 }
