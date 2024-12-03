@@ -246,7 +246,6 @@ h5 {
     height: 150px;
     width: 150px;
     margin: 20px;
-    text-align: left;
     background-color: #333333;
     border-radius: 10px;
     padding: 5px;
@@ -268,6 +267,7 @@ h5 {
 .image-card-button img {
     width: 140px;
     height: 100px;
+    image-rendering: pixelated;
     
 }
 
