@@ -4,12 +4,108 @@
   <meta charset="utf-8" />
   <title></title>
   <link rel="stylesheet" href="stylenuke.css" />
-    <script src="jquery-3.7.1.slim.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+<script src="js/auto.js"></script>
+<script src="js/anchor.js"></script>
 
 </head>
+
+<body>
+    
+    <header class="header">
+        
+        <div class="header-logo-container">
+            <a href="#"><img class="header-logo" src="./img/logo.png" alt="Ebengrad"></a>
+            <a href="index.html">Not Endless Space</a>
+        </div>
+        
+        <input type="text" id="mySearch2" onkeyup="SearchAll()" placeholder="Поиск..." title="Type in a category">
+        
+    </header>
+    
+    <div class="sidebar-container">
+        
+<!--        <h5>Содержание</h5>
+        <a class="sidebar-text" href="#role">Как получить роль</a> -->
+        
+    </div>
+   
+    <button class="mobile-a-button" onclick=""></button>
+    
+    
+    <div class="main-part">
+    
+        <div class="main-part-container">
+        
+            <div class="state-name"><h2>Ядерный оперативник</h2></div>
+            <div class="job-card-container">
+            
+                <div class="job-image"><img class="job-icon" src="img/nuclearoperative.png"></div>
+                
+                <audio class="audio" controls="controls">
+                    <source src="sound/nukeops_start.ogg" type="audio/ogg" />
+                </audio>
+                
+                <div class="job-text">
+                    <div class="bubble"><h6 class="phrase-text"></h6></div>
+                    
+                    <div class="card-info-container">
+                    <ul class="job-card-info">
+                    <li>Сложность:</li>    
+                    <li>Цель:</li>
+                    <li>Руководства:</li>
+                    <li>Лор:</li>             
+                    </ul>
+                    
+                    <ul class="job-card-text">
+                    <li id="job-diff">Очень тяжело</li>
+                    <li>Взорвать ядерную боеголовку</li>
+                    <li>Аплинк, Правила, Снаряжение</li>
+                    <li>Синдикат, Gorlax</li>
+                    </ul>
+                    </div>
+                        
+                    </div>
+                
+            
+            </div>
+                        
+            <div class="welcome-info-container">
+            
+                <div class="welcome-name"><h3 id="role">Как получить роль?</h3></div>
+                <div class="welcome-content">
+                
+Для того, чтобы стать ядерным оперативником, нужно поставить галочку в меню создания персонажа на роль ядерных оперативников, либо стать одиноким оперативником выбрав соответствующую роль будучи призраком.
+<p></p>                    
+Для того, чтобы получить возможность стать ядерным оперативником, нужно поставить галочку в меню создания персонажа на роль ядерного оперативника, которая вам по душе.
+                
+                </div>
+            
+            </div>
+    
+            <div class="end"></div>
+            
+            <div class="info-block-container">
+                <h3 id="welcome" >Добро пожаловать в отряд охотников за головами</h3>
+                <div class="info-block-content">Когда начнется раунд, вы окажетесь на секретном аванпосте Синдиката. Здесь вы найдете свою команду, командира, коды для запуска ядерной бомбы и все оборудование, необходимое для проникновения на станцию. Во избежание путаницы все оперативники должны слушать и выполнять указания своего командира. Вы - ударная группа, а не одинокий агент, поэтому ведите себя соответственно.
+<p></p>
+У вас есть специальная радиочастота, настроенная на зашифрованную длину волны (префикс :т), с ее помощью вы будете общаться со своей командой. Однако будьте осторожны, если один из ваших товарищей погибнет, радиочастота может быть скомпрометирована.</div>
+            </div>
+            
+        </div>
+      
+    </div>
+    <h3 id="testing" class="testanchor">hello</h3>
+    
+    <footer class="footer">
+        
+        
+        
+    </footer>
+    
  <button class="closeButton" id="btnOpen" style="right:auto;margin-left: 0px; position: fixed;" onclick="openNav()">→</button>
     <section class="side" id="sideBar">
       <button class="closeButton" id="btnClose" onclick="closeNav()">X</button>
@@ -77,107 +173,8 @@
         document.getElementById("btnOpen").style.opacity = "1";
         document.getElementById("btnClose").style.opacity = "0";
       }
-    </script>
-    
-<body>
-    
-    <header class="header">
-        
-        <div class="header-logo-container">
-            <a href="#"><img class="header-logo" src="./img/logo.png" alt="Ebengrad"></a>
-            <a href="index.html">Not Endless Space</a>
-        </div>
-        
-        <input type="text" id="mySearch2" onkeyup="SearchAll()" placeholder="Поиск..." title="Type in a category">
-        
-    </header>
-    
-    <div class="sidebar-container">
-        
-        <h5>Содержание</h5>
-        <a class="sidebar-text" href="#role">Как получить роль</a>
-        <a class="sidebar-text" href="#test">Тест работы содержания</a>
-        <a class="sidebar-text" href="#welcome">Добро пожаловать</a>
-        <a class="sidebar-text" href="#">Как получить роль</a>
-        <a class="sidebar-text" href="#">Как получить роль</a>
-        
-    </div>
-   
-    <button class="mobile-a-button" onclick=""></button>
-    
-    
-    <div class="main-part">
-    
-        <div class="main-part-container">
-        
-            <div class="state-name"><h2>Ядерный оперативник</h2></div>
-            <div class="job-card-container">
-            
-                <div class="job-image"><img class="job-icon" src="img/nuclearoperative.png"></div>
-                
-                <audio class="audio" controls="controls">
-                    <source src="sound/nukeops_start.ogg" type="audio/ogg" />
-                </audio>
-                
-                <div class="job-text">
-                    <div class="bubble"><h6 class="phrase-text"></h6></div>
-                    
-                    <div class="card-info-container">
-                    <ul class="job-card-info">
-                    <li>Сложность:</li>    
-                    <li>Цель:</li>
-                    <li>Руководства:</li>
-                    <li>Лор:</li>             
-                    </ul>
-                    
-                    <ul class="job-card-text">
-                    <li id="job-diff">Легко</li>
-                    <li>Взорвать ядерную боеголовку</li>
-                    <li>Аплинк, Правила, Снаряжение</li>
-                    <li>Синдикат, Gorlax</li>
-                    </ul>
-                    </div>
-                        
-                    </div>
-                
-            
-            </div>
-                        
-            <div class="welcome-info-container">
-            
-                <div class="welcome-name"><h3 id="role">Как получить роль?</h3></div>
-                <div class="welcome-content">
-                
-Для того, чтобы стать ядерным оперативником, нужно поставить галочку в меню создания персонажа на роль ядерных оперативников, либо стать одиноким оперативником выбрав соответствующую роль будучи призраком.
-<p></p>                    
-Для того, чтобы получить возможность стать ядерным оперативником, нужно поставить галочку в меню создания персонажа на роль ядерного оперативника, которая вам по душе.
-                
-                </div>
-            
-            </div>
-    
-            <div class="end"></div>
-            
-            <div class="info-block-container">
-                <h3 id="welcome">Добро пожаловать в отряд охотников за головами</h3>
-                <div class="info-block-content">Когда начнется раунд, вы окажетесь на секретном аванпосте Синдиката. Здесь вы найдете свою команду, командира, коды для запуска ядерной бомбы и все оборудование, необходимое для проникновения на станцию. Во избежание путаницы все оперативники должны слушать и выполнять указания своего командира. Вы - ударная группа, а не одинокий агент, поэтому ведите себя соответственно.
-<p></p>
-У вас есть специальная радиочастота, настроенная на зашифрованную длину волны (префикс :т), с ее помощью вы будете общаться со своей командой. Однако будьте осторожны, если один из ваших товарищей погибнет, радиочастота может быть скомпрометирована.</div>
-            </div>
-            
-        </div>
-      
-    </div>
-    <h3 id="testing">hello</h3>
-    
-    <footer class="footer">
-        
-        
-        
-    </footer>
+    </script>    
     
 <script src="randomPhrases.js"></script>
-<script src="js/script.js"></script>
-<script src="jquery-3.7.1.slim.min.js"></script>
 </body>
 </html>
