@@ -1,0 +1,7 @@
+{
+    "livePreviewUseDevServer": false,
+    "livePreviewServerURL": "http://localhost:8000/php",
+    "livePreviewServerProjectPath": "/",
+    "livePreviewHotReloadSupported": true,
+    "livePreviewFramework": "Custom"
+}
